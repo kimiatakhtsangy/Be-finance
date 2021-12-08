@@ -1,0 +1,377 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Overpass', sans-serif;
+}
+#home a{
+    color : var(--blue);
+    border-bottom: 1px solid var(--blue);
+    padding-bottom: 5px;
+}
+.body{
+    margin: 0 4%;
+}
+button:hover {
+    filter: brightness(80%);
+    transition: 0.2s;
+}
+button a{
+    text-decoration: none;
+    transition: 1s;
+    color:inherit;
+}
+.body1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.body1 .right img{
+    width: 90%;
+    margin-top: -2rem;
+}
+.part1{
+    display: flex;
+}
+#img-p1{
+    width: 2rem;
+}
+#text-p1{
+    margin-left: 3rem;
+}
+#text-p1 h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    line-height: 4rem;
+}
+#text-p1 p{
+    font-size: 1rem;
+    line-height: 2rem;
+    color: grey;
+}
+.buttons{
+    margin: 2rem 0;
+}
+#text-p2{
+    margin-left: 3rem;
+}
+#button1{
+    text-align: center;
+    font-size: 1rem;
+    width: 10rem;
+    border: 0;
+    padding:.5rem .7rem 1rem 1rem;
+    outline: none;
+    color: white;
+    background: var(--blue);
+    cursor: pointer;
+}
+#button2{
+    text-align: center;
+    width: 8rem;
+    font-size: 1rem;
+    border: 0;
+    padding:1rem 2rem;
+    outline: none;
+    color: black;
+    background: #efefef;
+    cursor: pointer;
+    margin-left: 0.9rem;
+}
+#button1 img{
+    width: 1.5rem;
+    transform: translateY(5px);
+}
+#img-p2{
+    width: 3rem;
+    transition: .5s;
+}
+#title-b2{
+    font-size: 5rem;
+    font-weight:bolder;
+}
+.part2{
+    display: flex;
+}
+#text-p2 p{
+    font-size: 15px;
+}
+#call-icon{
+    width: 3rem;
+}
+.animate__pulse{
+    animation: infinite;
+    animation-duration: 1s;
+}
+.animate__zoomIn ,.animate__flipInY{
+    animation-duration: 1s;
+}
+#avatar{
+    transform: translateX(-10px);
+}
+.number{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.number .img{
+    justify-self: end;
+}
+.number p{
+    color:#2f679b;
+    font-weight: bolder;
+}
+
+.number p{
+    font-size: 1.5rem !important;
+}
+
+.row{
+    display: flex;
+}
+.box img{
+    width: 25%;
+}
+.body2{
+    margin: 100px 5%;
+}
+.title-row{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#orange-num{
+    color: #f1812e;
+}
+.text-row{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    color: grey;
+}
+.row button{
+    box-sizing: border-box;
+    width: 12rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 3px solid #E2E2E2;
+    padding-top: 1rem;
+    padding-bottom: 1.2rem;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    transition: 0.5s;
+}
+.row button:hover{
+    background-color: var(--blue);
+    color: white;
+    filter: brightness(100%);
+    border: var(--blue);
+}
+.row button ion-icon{
+    font-size: 1.5rem;
+    transform: translateY(8px);
+}
+.body3{
+    margin: 80px 5%;
+    height: 500px;
+    background: url("https://themes.muffingroup.com/be/finance2_el/wp-content/uploads/2020/05/finance2-wrapbg1.png");
+    background-repeat: no-repeat;
+}
+.body3 img{
+    width: 3%;
+}
+.body3 p{
+    font-size:4.5rem;
+    font-weight: bolder;
+}
+#title-grey{
+    color: grey;
+}
+#title-orange{
+    color:#fa7e07;
+    font-size: 7rem;
+    font-weight: bolder;
+}
+.body4{
+    margin: 12rem 8rem;
+    display: flex;
+}
+.blueIcon{
+    margin-right: 5%;
+}
+.body4 #title{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.body4 #text4{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.blueIcon img{
+    width: 5rem;
+}
+.button4{
+    margin: 3% 0 0 25%;
+}
+.body4 button{
+    font-size: 20px;
+    width: 12rem;
+    border: 0;
+    padding: 15px 0;
+    outline: none;
+    color: white;
+    background: #065ba7;
+    cursor: pointer;
+}
+.body5{
+    margin: 12rem 8rem;
+    display: flex;
+}
+.body5 .left5 img{
+    width: 80%;
+}
+.title5{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.text5-1,.text5-2,.text5-3{
+    font-size:1.3rem ;
+    text-align: right;
+}
+.text5-1{
+    font-weight: bold;
+}
+.button5{
+    font-size: 20px;
+    width: 12rem;
+    border: 0;
+    padding: 15px 0;
+    outline: none;
+    color: white;
+    background:var(--blue);
+    cursor: pointer;
+}
+.button4 img,.button5 img{
+    transform: translateY(5px);
+}
+.right5 div{
+    text-align: right;
+    margin-top: 5rem;
+}
+.body6{
+    margin-left:4%;
+}
+.row6{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.box6{
+    justify-content: center;
+}
+.box6 .avatar{
+    width: 80%;
+}
+.icons img{
+    width: 20px;
+}
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    width: 20px;
+    margin: 3rem 0 ;
+}
+.job{
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: bolder;
+}
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: -1rem;
+}
+.text {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 1300px) {
+    .part1 img{
+        display: none;
+    }
+    .part1 hr{
+        display: none;
+    }
+    #text-p1 h1{
+        font-size: 2rem;
+        font-weight: bolder;
+        line-height: 2rem;
+    }
+    .body1 .right{
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .body1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .part1 p{
+        display: none;
+    }
+    .part2{
+        display: none;
+    }
+    .row{
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+    .box{
+       text-align: center;
+        margin-top: 3rem;
+    }
+    .buttons{
+        display: flex;
+    }
+    #title-b2{
+        font-size: 2.5rem;
+    }
+    .body3 p{
+        font-size: 1.5rem;
+    }
+    #title-orange{
+        font-size: 3rem;
+    }
+    .body3 p {
+        font-size: 5rem;
+    }
+    #title-orange{
+        font-size:7rem ;
+    }
+    .body4,.body5{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .body4{
+        margin-top: 50rem;
+    }
+    .text5-1,.text5-2,.text5-3{
+        text-align: center;
+    }
+    .row6{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .box6{
+        text-align:center ;
+    }
+    .icons{
+        margin-left: 41%;
+    }
+    .avatar{
+        width: 30%;
+    }
+}
+

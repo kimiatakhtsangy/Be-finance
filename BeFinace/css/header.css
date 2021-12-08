@@ -1,0 +1,140 @@
+::selection {
+    background: var(--blue);
+}
+html {
+    scroll-behavior: smooth;
+}
+.header{
+    font-family: 'Overpass', sans-serif;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background:rgba(255,255,255,.8) ;
+    display: flex;
+    font-size:1.1rem;
+    font-weight: bold !important;
+    margin: 2rem 2rem;
+}
+#logo{
+    width: 70%;
+}
+#menu-logo{
+    display: none;
+}
+nav{
+    flex:1;
+    text-align: right;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    height: 8vh;
+    justify-content: space-around;
+}
+nav ul li{
+    list-style: none;
+}
+.box-burger{
+    color: white !important;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+#blue-box{
+    text-align: center;
+    display: none;
+    font-size: 20px;
+    width: 12rem;
+    padding: 15px 0;
+    background: #065ba7;
+}
+
+nav ul li a:hover{
+    color :var(--blue);
+    border-bottom: 1px solid var(--blue);
+    padding-bottom: 5px;
+}
+.blue-box button{
+    font-size: 20px;
+    width: 12rem;
+    border: 0;
+    padding: 15px 0;
+    outline: none;
+    color: white;
+    background: #065ba7;
+    cursor: pointer;
+}
+.blue-box img{
+    transform: translateY(5px);
+}
+.burger {
+    cursor: pointer;
+    display: none;
+}
+.burger div{
+    width:25px ;
+    height:3px;
+    background-color: var(--blue);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 1300px) {
+    header{
+        overflow: hidden;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        height: 80vh;
+        top:8vh;
+        display: flex;
+        background:rgba(255,255,255,.8) ;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    nav ul li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        margin: 3% 95% ;
+    }
+    .blue-box{
+        display: none;
+    }
+    #blue-box{
+        display: block;
+    }
+
+}
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px );
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}

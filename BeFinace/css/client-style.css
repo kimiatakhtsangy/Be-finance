@@ -1,0 +1,223 @@
+body{
+    font-family: 'Overpass', sans-serif;
+}
+/*header*/
+.animate__fadeIn{
+    animation-duration: 1.5s;
+}
+#our-clients a{
+    color : rgb(20, 202, 244) ;
+    border-bottom: 1px solid rgb(20, 202, 244);
+    padding-bottom: 5px;
+}
+button a{
+    text-decoration: none;
+    transition: 1s;
+    color:inherit;
+}
+button:hover {
+    filter: brightness(80%);
+    transition: 0.2s;
+}
+/*header*/
+/*body*/
+.OurClients {
+    margin:0 10%;
+}
+/*body row 1*/
+.OurClients-part-1{
+    display: grid;
+    grid-template-rows:(2,2fr);
+    grid-template-areas: "left-header img-frst-right";
+
+}
+.OurClients-part-1-LeftHeader{
+    width: 80%;
+}
+.OurClients-part-1-LeftHeader h1 {
+    font-size: 3.5rem;
+}
+.OurClients-part-1-LeftHeader hr {
+    color: rgb(201, 197, 197);
+    box-shadow: none;
+
+}
+.OurClients-part-1-ContexLeft {
+    margin: 2rem 0 0.5rem 0;
+}
+#OurClients-part-1-ContexLeft-suggest{
+    color:  #808080;
+    font-size: 1rem;
+    font-weight: 100;
+}
+#OurClients-part-1-ContexLeft-profile {
+    width: 20%;
+    height:20% ;
+    float: right;
+    margin-top: -15%;
+}
+.OurClients-part-1-LeftHeader h6{
+    color: #7f7f7f;
+    line-height: 20px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.OurClients-part-1-LeftHeader h3{
+    color: #045ba8;
+    font-size: 1.5rem;
+}
+#profile-media{
+    display: none;
+}
+.OurClients-part-1-imgRight{
+    width: 100%;
+    height: 20%;
+    margin-top: 20%;
+
+}
+/*body row 2*/
+.OurClients-part-2{
+    display: grid;
+    grid-template-rows:(2,2fr);
+    grid-template-areas: "left-norton right-fintech";
+}
+.OurClients-part-2-LeftNorton{
+    width: 80%;
+}
+#norton {
+    width: 80%;
+    height: 8%;
+    margin-top: 10%;
+
+}
+.OurClients-part-2-RighFintech{
+    width: 80%;
+    margin-top: 20%;
+}
+#fintech {
+    width: 50%;
+    height: 8%;
+    margin-top: 30%;
+}
+/*body row 3*/
+.OurClients-part-3{
+    display: grid;
+    grid-template-rows:(2,2fr);
+    grid-template-areas: "left-smash right-cursus";
+}
+.OurClients-part-3-LeftSmash{
+    width: 80%;
+}
+#smash {
+    width: 30%;
+    height: 5%;
+}
+.OurClients-part-3-RightCursus{
+    width: 80%;
+    margin-top: 30%;
+}
+#cursus {
+    width: 12%;
+    height: 8%;
+}
+.OurClients h2{
+    font-size: 3rem;
+    margin: 1% 0 1% 0;
+}
+.OurClients h4{
+    font-size: 1rem;
+    font-weight: 100;
+    color:#808080;
+    margin: 1% 0 5% 0;
+}
+
+.clientImg {
+    width:100%;
+    height: auto;
+}
+@media only screen and (max-width: 700px){
+    body{
+        margin-top: 10%;
+    }
+    .OurClients {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .OurClients-part-1{
+        display: grid;
+        grid-template-columns:(2,2fr);
+        grid-template-areas: "left-header"
+                         " img-frst-right";
+
+    }
+    .OurClients-part-2{
+        display: grid;
+        grid-template-columns:(2,2fr);
+        grid-template-areas: "left-norton"
+                        " right-fintech";
+    }
+    .OurClients-part-3{
+        display: grid;
+        grid-template-columns:(2,2fr);
+        grid-template-areas: "left-smash"
+                          "right-cursus";
+    }
+
+    .OurClients h1 {
+        font-size: 1.5rem;
+        margin-bottom: 5%;
+    }
+    .OurClients h2{
+        font-size: 1.3rem;
+        margin: 1% 0 1% 0;
+    }
+    .OurClients h4{
+        font-size: 0.7rem;
+        margin: 5% 0 5% 0;
+    }
+    .OurClients h6{
+        font-size: 0.6rem;
+    }
+    .OurClients img {
+        width:90%;
+        height: auto;
+        margin: 0 2%;
+
+    }
+    #OurClients-part-1-ContexLeft-profile{
+        display: none;
+    }
+   #profile-media {
+        display: inline;
+        width: 40%;
+        margin: 1rem 10rem 1rem 0;
+    }
+    #OurClients-part-1-ContexLeft-suggest {
+        color:  #808080;
+        font-size: 0.6rem;
+        font-weight: lighter;
+        margin-top: 10%;
+    }
+    .OurClients-part-1-LeftHeader h3{
+        font-size: 0.7rem;
+    }
+    #norton {
+        margin-top: 4%;
+        width: 70%;
+        height: 10%;
+    }
+    #fintech {
+        width: 60%;
+        height: 10%;
+    }
+    #smash {
+        width: 45%;
+        height: 8%;
+    }
+    #cursus {
+        width: 25%;
+        height: 10%;
+    }
+}

@@ -1,0 +1,111 @@
+body {
+    font-family: 'Overpass', sans-serif;
+}
+.footer{
+    margin-top: 5rem;
+    overflow: hidden;
+}
+.foot1{
+    display:grid ;
+    grid-template-columns: 1fr 1fr;
+}
+.footerBody{
+    padding: 5rem 10% 5rem 10%;
+    background-color: #f4f4f4;
+}
+.footerRight{
+    display: flex;
+}
+.footerRight-img{
+    margin-right: 10%;
+}
+.footerRight-img img{
+    width: 120%;
+}
+.footerRight p{
+    font-weight: bold;
+    color: dimgray
+}
+.footerLeft{
+    text-align: right;
+    line-height: 60px;
+    transform: translateY(-30px);
+}
+.footerLeft p:first-child {
+    font-weight: bold;
+}
+.footerLeft span{
+    color:#2f679b;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: right;
+}
+.foot2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.foot2 p{
+    width: 80%;
+    /*font-size: 1.3rem;*/
+    font-weight: bold;
+    color: dimgray;
+    transform: translateY(-10px);
+}
+.foot2 button{
+    font-size: 20px;
+    width: 12rem;
+    border: 0;
+    padding: 15px 0;
+    outline: none;
+    color: white;
+    background: #065ba7;
+    cursor: pointer;
+}
+.foot2 button img{
+    transform: translateY(5px);
+}
+.endFooter{
+    margin:0  10%;
+    display: flex;
+}
+.endFooter p{
+    font-size: 1.3rem;
+}
+.endFooter a{
+    color: var(--blue);
+    text-decoration: none;
+}
+.footerIcon img{
+    width: 2rem;
+}
+.footerIcon{
+    position: absolute;
+    right: 10%;
+    transform: translateY(10px);
+}
+@media only screen and (max-width: 1300px) {
+    .footer{
+        text-align: center;
+    }
+
+    .foot1,.footerRight{
+        display:grid ;
+        grid-template-columns:1fr;
+    }
+    .footerRight img{
+        width: 15%;
+        text-align: center;
+        margin-left: 10%;
+    }
+    .footerLeft{
+        text-align: center;
+    }
+    .foot2{
+        display:grid ;
+        grid-template-columns:1fr;
+    }
+    .foot2 p{
+        width: 100%;
+    }
+}
